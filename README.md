@@ -42,13 +42,7 @@ ___
 Clone the repository with `git clone`
 
 ```bash
-    git clone https://github.com/mulihani/ticketflow.git ticketflow && cd ticketflow
-```
-
-Or via composer:
-
-```bash
-    composer require mulihani/ticketflow
+git clone https://github.com/mulihani/ticketflow.git ticketflow && cd ticketflow
 ```
    
 ### 2. Edit database information in .env file with your data:
@@ -76,13 +70,13 @@ After copying the file, edit database credentials
 ### 3. Install PHP dependencies:
 
 ```sh
-    composer install
+composer install
 ```
 
 ### 4. Generate a unique application key:
 
 ```php
-    php artisan key:generate
+php artisan key:generate
 ```
 
 ### 5. Running Migrations:
@@ -90,7 +84,7 @@ After copying the file, edit database credentials
 Execute the migrate artisan command:
 
 ```sh
-    php artisan migrate
+php artisan migrate
 ```
 
 ### 6. Seed essential data:
@@ -98,7 +92,7 @@ Execute the migrate artisan command:
 Execute the `db:seed` artisan command to seed essential data
 
 ```
-    php artisan db:seed
+php artisan db:seed
 ```
 After executing the above command, you can login to **control panel** by going go **`/cpanel`** URL and login with credentials admin@admin.com - password
 ___

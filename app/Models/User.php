@@ -28,7 +28,7 @@ class User extends Authenticatable implements FilamentUser
         'password',
         'is_admin',
         'type',
-        'active',
+        'is_active',
         'staff_id',
     ];
 
@@ -52,7 +52,7 @@ class User extends Authenticatable implements FilamentUser
         'password' => 'hashed',
         'is_admin' => 'boolean',
         'staff_id' => 'boolean',
-        'active' => 'boolean',
+        'is_active' => 'boolean',
     ];
 
     /**

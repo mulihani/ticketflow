@@ -67,6 +67,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/mytickets', [TicketController::class, 'index'])->name('user.tickets');
 
     Route::get('/PDF/{view}', [PdfController::class, 'generatePdf'])->name('generatePdf');
+    Route::get('/PDF/{view}/{record}', [PdfController::class, 'generateUserTicketPdf'])->name('generateUserTicketPdf');
     
 });
 

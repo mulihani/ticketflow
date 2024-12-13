@@ -30,6 +30,7 @@
                         <th>{{ __('ticket.ticket_status') }}</th>
                         <th>{{ __('ticket.ticket_category') }}</th>
                         <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,6 +46,10 @@
                                     <input type="text" name="ticketID" class="form-control" id="ticketID" value="{{ $ticket->id }}" hidden>
                                     <button type="submit" class="btn btn-outline-secondary btn-sm"><i class="bi bi-zoom-in"></i></button>
                                 </form>
+                            </td>
+                            <td>
+                                <a href="{{ route('generateUserTicketPdf', ['view' => 'ticket','record' => $ticket->id] )}}"
+                                class="btn btn-outline-secondary btn-sm">PDF</a>
                             </td>
                         </tr>
                     @endforeach

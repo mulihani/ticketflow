@@ -53,7 +53,10 @@
     </table> 
 
     <br>
-    <strong>{{ __('report.staff_name') }} : </strong>{{ $record->staff->name }}
+    <strong>{{ __('report.staff_name') }} : </strong>{{ isset($record->staff_id) ? $record->staff->name : '' }}
+   
+
+    
 
     
 </div>
